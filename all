@@ -1,0 +1,4 @@
+#!/bin/bash
+make -s clean
+make -s all
+make -s link
