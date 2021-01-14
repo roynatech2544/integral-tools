@@ -6,7 +6,8 @@ $(SUBDIRS):
 	$(MAKE) -C $@ $(MAKECMDGOALS)
 
 link : $(SUBOS)
-	clang $(SUBOS) -o intools -lstdc++
+	ld -r -o built-in.o $(SUBOS)
+	clang built-in.o -o intools -lstdc++
 
 .PHONY: $(TOPTARGETS) $(SUBDIRS)
 

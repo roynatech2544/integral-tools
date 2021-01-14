@@ -1,4 +1,5 @@
 #!/bin/bash
 make -s clean
-make -s all
-make -s link
+rm -f *.o intools
+make
+make link
