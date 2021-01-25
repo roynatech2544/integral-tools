@@ -1,5 +1,0 @@
-#!/bin/bash
-make -s clean
-rm -f *.o intools
-make
-make link

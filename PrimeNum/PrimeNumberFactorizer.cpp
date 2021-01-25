@@ -15,6 +15,7 @@ bool IsPrime(int Number) {
 	if (IsPRime) {
 		return true;
 	}
+	return false;
 }
 void PrimeFac(int Num, int Origin) {
 	for (int i = 2; i < Num; i++) {
