@@ -5,7 +5,7 @@
 std::string truerbose;
 using namespace std;
 void ComCCal(int nnum, int rnum, bool verbose) {
-	cout << "Calculating " << nnum << "P" << rnum << "." << endl;
+	cout << "Calculating " << nnum << "C" << rnum << "." << endl;
 	if (verbose) cout << "Step 1. Multiplying From "<< nnum << " To " << nnum - rnum + 1 << endl;
 	int factorial = 1;
 	for (int a = nnum; a >= nnum - rnum + 1; a--){
@@ -23,7 +23,7 @@ void ComCCal(int nnum, int rnum, bool verbose) {
 void ComC() {
 n:
 	cout << endl;
-	cout << "Combination > nPr" << endl;
+	cout << "Combination > nCr" << endl;
 	cout << "(C)2021 Na Soo-Hwan" << endl;
 	cout << "What Number is n in nCr? [integral] :";
 	cin >> myn;
